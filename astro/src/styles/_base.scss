@@ -32,20 +32,6 @@ body {
   }
 }
 
-// probably no longer necessary when in Astro
-#__next {
-  display: contents;
-}
-
-// move into body on Astro rewrite
-#__next {
-  > * {
-    max-width: var(--max-content-width);
-    margin-inline: auto;
-    width: 100%;
-  }
-}
-
 *,
 *:before,
 *:after {
