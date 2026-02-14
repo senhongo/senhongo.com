@@ -20,5 +20,3 @@ updates:
     # Specify reviewers for pull requests
     reviewers:
       - "senhongo"
-    exclude-paths:
-      - "next/**"
