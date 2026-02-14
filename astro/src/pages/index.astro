@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "@/components/layout.astro";
+import BlogRoll from "@/components/blog-roll.astro";
+import { pathHasLocale } from "astro:i18n";
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) =>
+    b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
+  )
+  .map((post) => ({
+    ...post,
+    id: post.id.substring(6),
+  }))
+  .slice(0, 10);
+---
+
+<Layout title="latest articles">
+  <BlogRoll posts={posts} />
+</Layout>

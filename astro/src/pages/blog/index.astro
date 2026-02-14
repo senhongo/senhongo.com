@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "@/components/layout.astro";
+import BlogRoll from "@/components/blog-roll.astro";
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) =>
+    b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
+  )
+  .map((post) => ({
+    ...post,
+    id: post.id.substring(6),
+  }));
+---
+
+<Layout title={`all articles (${posts.length})`}>
+  <BlogRoll posts={posts} />
+</Layout>

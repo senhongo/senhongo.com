@@ -1,0 +1,83 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import BaseHead from "@/components/BaseHead.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <header class="header--container">
+      <div class="header">
+        <p class="site-logo">
+          <a href="/">Sen Hongo</a>
+        </p>
+
+        <nav class="header--nav">
+          <a href="/now">Now</a>
+          <a href="/blog">Blog</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+
+        <a class="millefeuille-cta" href="https://millefeuille.app">
+          Try Millefeuille
+        </a>
+      </div>
+    </header>
+
+    <section class="site--title">
+      <h1>{title}</h1>
+    </section>
+
+    <main class="site--main">
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="footer--wrapper">
+        <section class="millefeuille-pr">
+          <p class="millefeuille-catchphrase">
+            A million layers of <br />
+            pure financial goodness
+          </p>
+
+          <a href="https://millefeuille.app" class="millefeuille-cta">
+            Try Millefeuille.app
+          </a>
+        </section>
+
+        <section class="footer--body">
+          <nav class="footer--nav">
+            <a href="/now">Now</a>
+            <a href="/blog">Blog</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="https://millefeuille.app">Millefeuille</a>
+          </nav>
+
+          <div class="footer--credits">
+            <p>&#169; Sen Hongo</p>
+
+            <nav class="footer--social">
+              <a href="https://github.com/senhongo">
+                <img src="/github-mark.png" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/sen-hongo/">
+                <img src="/In-Blue-128@2x.png" width="30" />
+              </a>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

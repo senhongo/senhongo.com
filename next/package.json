@@ -1,0 +1,46 @@
+{
+  "name": "lore",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lintFix": "eslint --fix \"src/**/*.{ts,tsx}\"",
+    "prettier": "pnpm exec prettier src --check",
+    "prettierFix": "pnpm exec prettier src --check --write",
+    "stylelint": "pnpm exec stylelint **/*.scss",
+    "stylelintFix": "pnpm exec stylelint **/*.scss --fix",
+    "format": "npm run lintFix && npm run stylelintFix && npm run prettierFix",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "^15.5.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.4.0",
+    "@types/react": "^19.1.13",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "gray-matter": "^4.0.3",
+    "postcss": "^8.5.6",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.6.2",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "sass": "^1.92.1",
+    "stylelint": "^16.24.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0"
+  },
+  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a"
+}

@@ -1,0 +1,27 @@
+.blog-roll {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.blog-roll--title {
+  font-weight: var(--fw-bold);
+  &:link,
+  &:visited,
+  &:link:active,
+  &:visited:active {
+    color: var(--black-300);
+  }
+}
+
+.blog-roll--category {
+  font-style: italic;
+  align-self: flex-end;
+}
+
+.blog-roll--category,
+.blog-roll--date {
+  color: var(--black-100);
+  font-size: var(--fs-small);
+}

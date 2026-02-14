@@ -1,0 +1,194 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--serif);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  background-color: var(--ivory-100);
+  color: var(--black-300);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  > * {
+    max-width: var(--max-content-width);
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  @media only screen and (width > 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+// probably no longer necessary when in Astro
+#__next {
+  display: contents;
+}
+
+// move into body on Astro rewrite
+#__next {
+  > * {
+    max-width: var(--max-content-width);
+    margin-inline: auto;
+    width: 100%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-extralarge);
+}
+h2 {
+  font-size: var(--fs-large);
+}
+
+// Quotes in content
+blockquote {
+  margin: 0;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--green-100);
+  color: var(--black-200);
+}
+
+// Code blocks
+pre {
+  white-space: pre-wrap;
+}
+
+// Set links to always be the default html blue
+:link,
+:visited,
+:link:active,
+:visited:active {
+  color: #0000ee;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Move these styles elsewhere
+.site--title {
+  margin-top: 5rem; // magic number, roughly height of header
+  padding-inline: 1rem;
+  font-style: italic;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-extralarge);
+
+  * {
+    padding-inline: 1rem;
+    border-bottom: 1px solid var(--black-300);
+  }
+
+  @media only screen and (width > 430px) {
+    margin-top: 7rem; // magic number, roughly height of header
+  }
+}
+
+.site--main {
+  margin-top: 1rem;
+  padding-inline: 1rem;
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.millefeuille-pr {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+
+  .millefeuille-cta {
+    align-self: center;
+  }
+}
+
+.millefeuille-cta {
+  background-color: color-mix(in srgb, var(--rose-300) 50%, transparent);
+  color: var(--ivory-100);
+  border: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: var(--fs-base);
+  white-space: nowrap;
+
+  box-shadow: var(--shadow);
+}
+
+.millefeuille-catchphrase {
+  font-size: var(--fs-extralarge);
+  font-weight: var(--fw-bold);
+}
+
+:root {
+  --grid-min-col-size: 250px;
+}
+/* Reusable responsive grid that sizes each column to the minimal size --grid-min-col-size var */
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--grid-min-col-size), 100%), 1fr)
+  );
+  gap: 1rem;
+
+  > * {
+    padding: 25px;
+    text-align: center;
+    // color: white;
+    text-transform: uppercase;
+  }
+
+  &.no-gap {
+    gap: 0;
+  }
+}
+/* the var defined in the root is a global min size but it can be overridden when used */
+.override-grid-col-size {
+  --grid-min-col-size: 200px;
+}
+
+/*
+A wrapper grid with 12 columns and a 1.5rem gutter 
+Useful for wrapping the entire page
+*/
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 1.5rem;
+  // TODO: needs a max width
+}
+
+.w500 {
+  width: 1000px;
+}
