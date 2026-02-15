@@ -1,11 +1,10 @@
 ---
 import Layout from "@/components/layout.astro";
+
+import {Content} from "@/content/about.md";
 ---
 
 <Layout title="About Me">
-  <p>
-    I'm a freelance software engineer building
-    <a href="https://millefeuille.app/">Millefeuille</a>, a personal finance
-    managment app.
-  </p>
+  <!-- {about.compiledContent()} -->
+   <Content />
 </Layout>
