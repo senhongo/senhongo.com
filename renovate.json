@@ -3,5 +3,12 @@
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard"
+  ],
+  "assigneesFromCodeOwners": true,
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    }
   ]
 }
