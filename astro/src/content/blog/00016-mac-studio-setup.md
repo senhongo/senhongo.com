@@ -2,6 +2,7 @@
 title: Mac Studio Setup
 date: 2023/04/26
 description: Setting up my Mac Studio
+tags: []
 series:
 category: dev
 ---
