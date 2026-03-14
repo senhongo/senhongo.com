@@ -15,5 +15,53 @@ const posts = (await getCollection("blog"))
 ---
 
 <Layout title={`all articles (${posts.length})`}>
+  <div>
+
+    <div>
+      Categories
+        <button>thoughts</button>
+        <button>dev</button>
+        <button>blah</button>
+        <button>food</button>
+        <button>asdf</button>
+    </div>
+
+    <div>
+      Tags
+        <button>thoughts</button>
+        <button>dev</button>
+        <button>blah</button>
+        <button>food</button>
+        <button>asdf</button>
+        <button>thoughts</button>
+        <button>dev</button>
+        <button>blah</button>
+        <button>food</button>
+        <button>asdf</button>
+        <button>thoughts</button>
+        <button>dev</button>
+        <button>blah</button>
+        <button>food</button>
+        <button>asdf</button>
+        <button>thoughts</button>
+        <button>dev</button>
+        <button>blah</button>
+        <button>food</button>
+        <button>asdf</button>
+    </div>
+
+    <div>
+        <details>
+          <summary>Series</summary>
+          <ui>
+            <li>thoughts</li>
+            <li>dev</li>
+            <li>blah</li>
+            <li>food</li>
+            <li>asdf</li>
+          </ui>
+        </details>
+    </div>
+  </div>
   <BlogRoll posts={posts} />
 </Layout>
