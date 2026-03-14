@@ -1,5 +1,5 @@
 {
-  "name": "lore-astro",
+  "name": "lore",
   "compatibility_date": "2026-02-02", // Update to the day you deploy
   "assets": {
     "directory": "./dist",
