@@ -1,5 +1,6 @@
 ---
 title: No index signature with a parameter of type 'string' was found on type '{}'
+description:
 date: 2022/05/24
 series:
 tags: [typescript]
