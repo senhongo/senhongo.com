@@ -4,7 +4,7 @@
     "config:recommended",
     ":disableDependencyDashboard"
   ],
-  "assigneesFromCodeOwners": true,
+  "reviewersFromCodeOwners": true,
   "packageRules": [
     {
       "matchDatasources": ["npm"],
