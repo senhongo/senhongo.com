@@ -9,6 +9,7 @@
     {
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "7 days"
+      "schedule": ["0 11 * * 1"]
     }
   ]
 }
