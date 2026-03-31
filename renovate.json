@@ -4,12 +4,18 @@
     "config:recommended",
     ":disableDependencyDashboard"
   ],
-  "reviewers": ["senhongo"],
+  "reviewers": [
+    "senhongo"
+  ],
   "packageRules": [
     {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "7 days"
-      "schedule": ["0 11 * * 1"]
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "7 days",
+      "schedule": [
+        "* 11 * * 1"
+      ]
     }
   ]
 }
