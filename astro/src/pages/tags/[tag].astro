@@ -1,25 +1,31 @@
 ---
-import { type CollectionEntry, getCollection, render } from "astro:content";
+import { getCollection } from 'astro:content';
 
-import Article from "@/components/article.astro";
-import Layout from "@/components/layout.astro";
-
+// import Article from '@/components/article.astro';
+import Layout from '@/components/layout.astro';
 
 export async function getStaticPaths() {
-    const posts = (await getCollection("blog"))
-    const tags = [...new Set(posts.flatMap((post) => post.data.tags))]
+  const posts = await getCollection('blog');
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
 
-  return tags.map((tag) => ({
-    params: {tag}
-  }))
+  return tags.map((tag) => {
+    const filteredPosts = posts.filter((post) => post.data.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
 }
-type Props = CollectionEntry<"blog">;
 
 const { tag } = Astro.params;
+const { posts } = Astro.props;
 ---
 
 <Layout title={tag}>
   <div>
     {tag}
+  </div>
+  <div>
+    {posts.map((p) => <p>{p.data.title}</p>)}
   </div>
 </Layout>

@@ -1,10 +1,13 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
 
-import Layout from "@/components/layout.astro";
-import BlogRoll from "@/components/blog-roll.astro";
+import Tags from '@/components//taxonomy/tags.astro';
+import Category from '@/components//taxonomy/category.astro';
+import Series from '@/components//taxonomy/series.astro';
+import Layout from '@/components/layout.astro';
+import BlogRoll from '@/components/blog-roll.astro';
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection('blog'))
   .sort((a, b) =>
     b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
   )
@@ -12,55 +15,26 @@ const posts = (await getCollection("blog"))
     ...post,
     id: post.id.substring(6),
   }));
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+const categories = [...new Set(posts.flatMap((post) => post.data.category))];
+const series = [...new Set(posts.flatMap((post) => post.data.series))];
 ---
 
 <Layout title={`all articles (${posts.length})`}>
   <div>
-
-    <div>
+    <div class="tags-list">
       Categories
-        <button>thoughts</button>
-        <button>dev</button>
-        <button>blah</button>
-        <button>food</button>
-        <button>asdf</button>
+      {categories.map((category) => <Category value={category} />)}
     </div>
 
     <div>
       Tags
-        <button>thoughts</button>
-        <button>dev</button>
-        <button>blah</button>
-        <button>food</button>
-        <button>asdf</button>
-        <button>thoughts</button>
-        <button>dev</button>
-        <button>blah</button>
-        <button>food</button>
-        <button>asdf</button>
-        <button>thoughts</button>
-        <button>dev</button>
-        <button>blah</button>
-        <button>food</button>
-        <button>asdf</button>
-        <button>thoughts</button>
-        <button>dev</button>
-        <button>blah</button>
-        <button>food</button>
-        <button>asdf</button>
+      <Tags values={tags} />
     </div>
 
-    <div>
-        <details>
-          <summary>Series</summary>
-          <ui>
-            <li>thoughts</li>
-            <li>dev</li>
-            <li>blah</li>
-            <li>food</li>
-            <li>asdf</li>
-          </ui>
-        </details>
+    <div class="tags-list">
+      Series
+      {series.map((s) => <Series value={s} />)}
     </div>
   </div>
   <BlogRoll posts={posts} />
