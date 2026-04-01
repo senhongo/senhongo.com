@@ -1,0 +1,17 @@
+---
+interface Props {
+  values: string[];
+}
+
+const { values } = Astro.props;
+---
+
+{
+  values.map.length > 0 && (
+    <div class="tags-list">
+      {values.map((value) => (
+        <a href={`/tags/${value}`}>{value}</a>
+      ))}
+    </div>
+  )
+}
