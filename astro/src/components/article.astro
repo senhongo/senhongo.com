@@ -10,13 +10,13 @@ type Props = CollectionEntry<'blog'>['data'];
 const { date, updatedDate, category, series, tags } = Astro.props;
 ---
 
-<div class="metadata">
+<div class="article--metadata">
   <section>
     <p>published: {date}</p>
     {updatedDate && <p>updated: {updatedDate}</p>}
   </section>
 
-  <section class="taxonomy">
+  <section class="article--taxonomy">
     {
       category && (
         <section>
@@ -41,6 +41,6 @@ const { date, updatedDate, category, series, tags } = Astro.props;
   </section>
 </div>
 
-<article class="contents">
+<article class="article--contents">
   <slot />
 </article>

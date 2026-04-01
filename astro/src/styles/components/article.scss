@@ -1,4 +1,4 @@
-.metadata {
+.article--metadata {
   font-size: var(--fs-small);
   display: flex;
   justify-content: space-between;
@@ -8,11 +8,11 @@
   color: var(--black-100);
 }
 
-.taxonomy {
+.article--taxonomy {
   text-align: right;
 }
 
-.contents {
+.article--contents {
   padding-inline: 1rem;
   margin-top: 1rem;
   color: var(--black-500);
