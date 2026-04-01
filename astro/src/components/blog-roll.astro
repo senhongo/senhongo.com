@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import Category from '@/components//taxonomy/category.astro';
 
 interface Props {
   posts: CollectionEntry<"blog">[];
@@ -20,7 +21,7 @@ const { posts } = Astro.props;
       </h2>
         {/* {a.data.tags && a.data.tags.length > 0 && a.data.tags.map((t) => <span>{t}</span>)} */}
 
-      <span class="blog-roll--category">{a.data.category}</span>
+      <Category value={a.data.category} />
     </article>
   ))
 }
