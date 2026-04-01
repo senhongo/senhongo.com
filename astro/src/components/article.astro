@@ -1,7 +1,11 @@
 ---
-import { type CollectionEntry } from "astro:content";
+import { type CollectionEntry } from 'astro:content';
 
-type Props = CollectionEntry<"blog">["data"];
+import Tags from '@/components//taxonomy/tags.astro';
+import Category from '@/components//taxonomy/category.astro';
+import Series from '@/components//taxonomy/series.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
 
 const { date, category, series, tags } = Astro.props;
 ---
@@ -13,7 +17,9 @@ const { date, category, series, tags } = Astro.props;
     {
       category && (
         <section>
-          <span>category: {category}</span>
+          <span>
+            category: <Category value={category} />
+          </span>
         </section>
       )
     }
@@ -22,7 +28,7 @@ const { date, category, series, tags } = Astro.props;
       series && (
         <section>
           <span>
-            part of series: <a>{series}</a>
+            part of series: <Series value={series} />
           </span>
         </section>
       )
@@ -32,11 +38,7 @@ const { date, category, series, tags } = Astro.props;
       tags && tags.length > 0 && (
         <section>
           tags:
-          {tags.map((t, i) => (
-            <span>
-              {i > 0 && ","} {t}
-            </span>
-          ))}
+          <Tags values={tags} />
         </section>
       )
     }
