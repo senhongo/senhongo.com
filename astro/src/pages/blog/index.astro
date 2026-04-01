@@ -21,7 +21,7 @@ const series = [...new Set(posts.flatMap((post) => post.data.series))];
 ---
 
 <Layout title={`all articles (${posts.length})`}>
-  <div>
+  <div class="taxonomy">
     <div class="tags-list">
       Categories
       {categories.map((category) => <Category value={category} />)}
