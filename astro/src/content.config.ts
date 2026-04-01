@@ -29,8 +29,4 @@ const blog = defineCollection({
     }),
 });
 
-const tags = defineCollection({
-  schema: () => z.array(z.string()).default([]),
-});
-
-export const collections = { blog, tags };
+export const collections = { blog };
