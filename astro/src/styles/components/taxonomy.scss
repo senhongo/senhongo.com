@@ -1,6 +1,32 @@
+.tags-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  > * {
+    font-size: var(--fs-mini);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--rose-100);
+    color: var(--black-500);
+  }
+}
+
 .category {
-  font-size: var(--fs-small);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--red-100);
+  font-size: var(--fs-mini);
   font-style: italic;
   align-self: flex-end;
-  color: var(--black-500);
+  color: var(--black-100);
+}
+.series {
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--green-100);
+  font-size: var(--fs-mini);
+  font-style: italic;
+  align-self: flex-end;
+  color: var(--black-100);
 }
