@@ -26,9 +26,16 @@ const { posts } = Astro.props;
         <Category value={post.data.category} />
       </header>
 
-      <section class="blog-roll--tags">
-        <Series value={post.data.series} />
-        <Tags values={post.data.tags} />
+      <section class="blog-roll--taxonomy">
+        {post.data.series && (
+          <span>
+            <span class="blog-roll--taxonomy--label">part of series: </span>
+            <Series value={post.data.series} />
+          </span>
+        )}
+        <span class="flex-right">
+          <Tags values={post.data.tags} />
+        </span>
       </section>
     </article>
   ))

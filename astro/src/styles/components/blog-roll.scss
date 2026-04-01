@@ -25,7 +25,16 @@
   font-size: var(--fs-small);
 }
 
-.blog-roll--tags {
+.blog-roll--taxonomy {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (width > 768px) {
+    flex-direction: row;
+  }
+}
+
+.blog-roll--taxonomy--label {
+  font-size: var(--fs-small);
 }
