@@ -7,11 +7,14 @@ import Series from '@/components//taxonomy/series.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { date, category, series, tags } = Astro.props;
+const { date, updatedDate, category, series, tags } = Astro.props;
 ---
 
 <div class="metadata">
-  <span>published: {date}</span>
+  <section>
+    <p>published: {date}</p>
+    {updatedDate && <p>updated: {updatedDate}</p>}
+  </section>
 
   <section class="taxonomy">
     {
@@ -34,14 +37,7 @@ const { date, category, series, tags } = Astro.props;
       )
     }
 
-    {
-      tags && tags.length > 0 && (
-        <section>
-          tags:
-          <Tags values={tags} />
-        </section>
-      )
-    }
+    <Tags values={tags} />
   </section>
 </div>
 
