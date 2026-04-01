@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+
+import Category from '@/components/taxonomy/category.astro';
+import Layout from '@/components/layout.astro';
+
+const posts = await getCollection('blog');
+const categories = [...new Set(posts.flatMap((post) => post.data.category))];
+---
+
+<Layout title={`all Categories (${categories.length})`}>
+  {categories.map((category) => <Category value={category} />)}
+</Layout>

@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+
+import Series from '@/components/taxonomy/series.astro';
+import Layout from '@/components/layout.astro';
+
+const posts = await getCollection('blog');
+const series = [...new Set(posts.flatMap((post) => post.data.series))];
+---
+
+<Layout title={`all Series (${series.length})`}>
+  {series.map((s) => <Series value={s} />)}
+</Layout>
