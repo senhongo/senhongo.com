@@ -1,17 +1,19 @@
 ---
-interface Props {
-  values: string[];
-}
+import { getCollection } from 'astro:content';
 
-const { values } = Astro.props;
+import PillList from './pill-list.astro';
+import Pill from './pill.astro';
+
+const posts = await getCollection('blog');
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
 ---
 
 {
-  values.map.length > 0 && (
-    <div class="tags-list">
-      {values.map((value) => (
-        <a href={`/tags/${value}`}>{value}</a>
+  tags.length > 0 && (
+    <PillList>
+      {tags.map((tag) => (
+        <Pill value={tag} type="tag" />
       ))}
-    </div>
+    </PillList>
   )
 }

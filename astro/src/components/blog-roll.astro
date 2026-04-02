@@ -1,9 +1,8 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
-import Tags from '@/components/taxonomy/tags.astro';
-import Category from '@/components/taxonomy/category.astro';
-import Series from '@/components/taxonomy/series.astro';
+import Pill from '@/components/taxonomy/pill.astro';
+import PillList from '@/components/taxonomy/pill-list.astro';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
@@ -23,18 +22,24 @@ const { posts } = Astro.props;
             {post.data.title}
           </a>
         </h2>
-        <Category value={post.data.category} />
+        <Pill type="category" value={post.data.category} />
       </header>
 
       <section class="blog-roll--taxonomy">
         {post.data.series && (
           <span>
             <span class="blog-roll--taxonomy--label">part of series: </span>
-            <Series value={post.data.series} />
+            <Pill type="series" value={post.data.series} />
           </span>
         )}
         <span class="flex-right">
-          <Tags values={post.data.tags} />
+          {post.data.tags.length > 0 && (
+            <PillList>
+              {post.data.tags.map((tag) => (
+                <Pill value={tag} type="tag" />
+              ))}
+            </PillList>
+          )}
         </span>
       </section>
     </article>

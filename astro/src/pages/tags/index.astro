@@ -1,13 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
-
 import Tags from '@/components/taxonomy/tags.astro';
 import Layout from '@/components/layout.astro';
-
-const posts = await getCollection('blog');
-const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
 ---
 
-<Layout title={`all Tags (${tags.length})`}>
-  <Tags values={tags} />
+<Layout title="All Tags">
+  <Tags />
 </Layout>

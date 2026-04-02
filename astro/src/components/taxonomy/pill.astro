@@ -3,13 +3,13 @@ import classnames from 'classnames';
 
 interface Props {
   value: string;
-  type: 'tags' | 'categories' | 'series';
+  type: 'tag' | 'category' | 'series';
   className?: string;
 }
 
 const { value, type, className } = Astro.props;
 ---
 
-<a class={classnames('pill', className)} href={`/${type}/${value}`}>
+<a class={classnames('pill', className, type)} href={`/${type}/${value}`}>
   {value}
 </a>

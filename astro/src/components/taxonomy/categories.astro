@@ -5,6 +5,7 @@ import PillList from './pill-list.astro';
 import Pill from './pill.astro';
 
 const allPosts = await getCollection('blog');
+const categories = [...new Set(allPosts.flatMap((post) => post.data.category))];
 const series = [
   ...new Set(
     allPosts
@@ -15,10 +16,10 @@ const series = [
 ---
 
 {
-  series.length > 0 && (
+  categories.length > 0 && (
     <PillList>
-      {series.map((serie) => (
-        <Pill value={serie} type="series" />
+      {categories.map((category) => (
+        <Pill value={category} type="category" />
       ))}
     </PillList>
   )

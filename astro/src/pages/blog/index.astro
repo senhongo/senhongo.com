@@ -2,35 +2,33 @@
 import { getCollection } from 'astro:content';
 
 import Tags from '@/components/taxonomy/tags.astro';
-import Category from '@/components/taxonomy/category.astro';
 import Series from '@/components/taxonomy/series.astro';
+import Categories from '@/components/taxonomy/categories.astro';
 import Layout from '@/components/layout.astro';
 import BlogRoll from '@/components/blog-roll.astro';
 
 const posts = (await getCollection('blog')).sort((a, b) =>
   b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
 );
-const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
-const categories = [...new Set(posts.flatMap((post) => post.data.category))];
-const series = [...new Set(posts.flatMap((post) => post.data.series))];
 ---
 
 <Layout title={`all articles (${posts.length})`}>
   <div class="taxonomy">
-    <div class="tags-list">
-      Categories
-      {categories.map((category) => <Category value={category} />)}
+    <div class="">
+      <span>Categories</span>
+      <Categories />
     </div>
 
-    <div>
-      Tags
-      <Tags values={tags} />
+    <div class="">
+      <span>Tags</span>
+      <Tags />
     </div>
 
-    <div class="tags-list">
-      Series
-      {series.map((s) => <Series value={s} />)}
+    <div class="">
+      <span>Series</span>
+      <Series />
     </div>
   </div>
+
   <BlogRoll posts={posts} />
 </Layout>

@@ -3,13 +3,21 @@
   display: flex;
   justify-content: space-between;
   font-style: italic;
-
   padding-inline: 1rem;
   color: var(--black-100);
 }
 
 .article--taxonomy {
   text-align: right;
+
+  > * + * {
+    margin-top: 0.25rem;
+  }
+
+  > * {
+    // Forces the tag list to align right
+    justify-content: flex-end;
+  }
 }
 
 .article--contents {
