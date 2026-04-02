@@ -1,18 +1,26 @@
-.metadata {
+.article--metadata {
   font-size: var(--fs-small);
   display: flex;
   justify-content: space-between;
   font-style: italic;
-
   padding-inline: 1rem;
   color: var(--black-100);
 }
 
-.taxonomy {
+.article--taxonomy {
   text-align: right;
+
+  > * + * {
+    margin-top: 0.25rem;
+  }
+
+  > * {
+    // Forces the tag list to align right
+    justify-content: flex-end;
+  }
 }
 
-.contents {
+.article--contents {
   padding-inline: 1rem;
   margin-top: 1rem;
   color: var(--black-500);

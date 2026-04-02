@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+
+import PillList from './pill-list.astro';
+import Pill from './pill.astro';
+
+const posts = await getCollection('blog');
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+---
+
+{
+  tags.length > 0 && (
+    <PillList>
+      {tags.map((tag) => (
+        <Pill value={tag} type="tags" />
+      ))}
+    </PillList>
+  )
+}

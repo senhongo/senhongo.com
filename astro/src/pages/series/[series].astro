@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+
+import Layout from '@/components/layout.astro';
+import BlogRoll from '@/components/blog-roll.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const allSeries = [
+    ...new Set(
+      allPosts
+        .filter((post) => post.data.series)
+        .flatMap((post) => post.data.series),
+    ),
+  ];
+
+  return allSeries.map((series) => ({
+    params: { series },
+    props: { posts: allPosts.filter((post) => post.data.series === series) },
+  }));
+}
+
+const { series } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<Layout title={`${series}`}>
+  <BlogRoll posts={posts} />
+</Layout>

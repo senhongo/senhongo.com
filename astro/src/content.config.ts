@@ -1,9 +1,18 @@
-import { defineCollection, z } from "astro:content";
-import { glob } from "astro/loaders";
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
   // Load Markdown and MDX files in the `src/content/blog/` directory.
-  loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
+  loader: glob({
+    base: './src/content/blog',
+    pattern: '**/*.{md,mdx}',
+    generateId: ({ entry }) =>
+      entry
+        .substring(6)
+        .replace(/\s+/g, '-') // Replace space with hyphen
+        .replace(/\.md|x$/, ''), // Remove the prepended index and .mdx file name
+  }),
   // Type-check frontmatter using a schema
   schema: () =>
     z.object({
@@ -14,8 +23,8 @@ const blog = defineCollection({
       // Transform string to Date object
       // date: z.coerce.date(),
       // updatedDate: z.coerce.date().optional(),
-      tags: z.array(z.string()).nullish(),
-      category: z.string().nullish(),
+      tags: z.array(z.string()).default([]),
+      category: z.string(),
       series: z.string().nullish(),
     }),
 });

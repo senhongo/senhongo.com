@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+
+import PillList from './pill-list.astro';
+import Pill from './pill.astro';
+
+const allPosts = await getCollection('blog');
+const series = [
+  ...new Set(
+    allPosts
+      .filter((post) => post.data.series)
+      .flatMap((post) => post.data.series),
+  ),
+];
+---
+
+{
+  series.length > 0 && (
+    <PillList>
+      {series.map((serie) => (
+        <Pill value={serie} type="series" />
+      ))}
+    </PillList>
+  )
+}

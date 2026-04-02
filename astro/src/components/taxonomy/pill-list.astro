@@ -1,0 +1,13 @@
+---
+import classnames from 'classnames';
+
+interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<div class={classnames('pill-list', className)}>
+  <slot />
+</div>

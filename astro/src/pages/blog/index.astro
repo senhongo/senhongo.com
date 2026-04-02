@@ -1,19 +1,34 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
 
-import Layout from "@/components/layout.astro";
-import BlogRoll from "@/components/blog-roll.astro";
+import Tags from '@/components/taxonomy/tags.astro';
+import Series from '@/components/taxonomy/series.astro';
+import Categories from '@/components/taxonomy/categories.astro';
+import Layout from '@/components/layout.astro';
+import BlogRoll from '@/components/blog-roll.astro';
 
-const posts = (await getCollection("blog"))
-  .sort((a, b) =>
-    b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
-  )
-  .map((post) => ({
-    ...post,
-    id: post.id.substring(6),
-  }));
+const posts = (await getCollection('blog')).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
+);
 ---
 
 <Layout title={`all articles (${posts.length})`}>
+  <div class="taxonomy">
+    <div class="">
+      <span>Categories</span>
+      <Categories />
+    </div>
+
+    <div class="">
+      <span>Tags</span>
+      <Tags />
+    </div>
+
+    <div class="">
+      <span>Series</span>
+      <Series />
+    </div>
+  </div>
+
   <BlogRoll posts={posts} />
 </Layout>
