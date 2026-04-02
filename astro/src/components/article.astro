@@ -20,7 +20,7 @@ const { date, updatedDate, category, series, tags } = Astro.props;
       category && (
         <section>
           <span>
-            category: <Pill type="category" value={category} />
+            category: <Pill type="categories" value={category} />
           </span>
         </section>
       )
@@ -40,7 +40,7 @@ const { date, updatedDate, category, series, tags } = Astro.props;
       tags.length > 0 && (
         <PillList>
           {tags.map((tag) => (
-            <Pill value={tag} type="tag" />
+            <Pill value={tag} type="tags" />
           ))}
         </PillList>
       )

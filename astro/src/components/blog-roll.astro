@@ -22,7 +22,7 @@ const { posts } = Astro.props;
             {post.data.title}
           </a>
         </h2>
-        <Pill type="category" value={post.data.category} />
+        <Pill type="categories" value={post.data.category} />
       </header>
 
       <section class="blog-roll--taxonomy">
@@ -36,7 +36,7 @@ const { posts } = Astro.props;
           {post.data.tags.length > 0 && (
             <PillList>
               {post.data.tags.map((tag) => (
-                <Pill value={tag} type="tag" />
+                <Pill value={tag} type="tags" />
               ))}
             </PillList>
           )}

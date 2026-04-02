@@ -18,6 +18,6 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<Layout title={`${tag} tagged articles`}>
+<Layout title={`articles tagged ${tag}`}>
   <BlogRoll posts={posts} />
 </Layout>
