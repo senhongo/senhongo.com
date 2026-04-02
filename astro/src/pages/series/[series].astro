@@ -14,8 +14,6 @@ export async function getStaticPaths() {
     ),
   ];
 
-  // const allSeries = ['asdf', 'redesign'];
-
   return allSeries.map((series) => ({
     params: { series },
     props: { posts: allPosts.filter((post) => post.data.series === series) },
