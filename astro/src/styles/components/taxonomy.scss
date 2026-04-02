@@ -39,3 +39,20 @@
   align-self: flex-end;
   color: var(--ivory-500);
 }
+
+.pill-list {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--ivory-300);
+  font-size: var(--fs-small);
+  font-style: italic;
+  align-self: flex-end;
+  color: var(--black-100);
+}
