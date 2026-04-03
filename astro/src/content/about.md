@@ -14,6 +14,12 @@ Previously worked on:
 - [Profit X]
 - Procare Solutions Electronic Medical Records
 
+## About blog
+
+It's supposedly a dev blog but now it's mostly just personal ramblings. Sorry.
+
+This blog is built using [Astro] and hosted on Cloudflare. The [source] is available if you'd like to take a look.
+
 [Millefeuille]: https://millefeuille.app
 [Chubic]: https://chubic.com
 [fundbook]: https://fundbook.co.jp
@@ -22,3 +28,5 @@ Previously worked on:
 [U Motion]: https://www.desamis.co.jp/service/u-motion-1
 [Profit X]: https://caprofitx.jp
 [senhongo.com]: https://senhongo.com
+[Astro]: https://astro.build
+[source]: https://github.com/senhongo/senhongo.com
