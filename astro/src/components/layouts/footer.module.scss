@@ -50,14 +50,26 @@
   }
 }
 
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font-size: var(--fs-medium);
+
+  @media only screen and (width > 430px) {
+    flex-direction: row;
+    font-size: var(--fs-small);
+  }
+}
+
 .nav {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 
-  @media only screen and (width > 430px) {
-    flex-direction: row;
-    justify-content: space-between;
+  > *:first-child {
+    font-weight: var(--fw-bold);
   }
 }
 
