@@ -7,7 +7,6 @@
 
 .pill-list {
   display: flex;
-  align-items: center;
   gap: 0.25rem 0.5rem;
   flex-wrap: wrap;
 }
@@ -16,6 +15,7 @@
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   font-size: var(--fs-small);
+  align-self: center; // self declare because not all pills are inside a pill-list
 
   &.tags {
     background-color: var(--rose-100);
