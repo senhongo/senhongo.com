@@ -1,10 +1,10 @@
-.blog-roll--header {
+.header {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
 }
 
-.blog-roll--title {
+.title {
   font-weight: var(--fw-bold);
   &:link,
   &:visited,
@@ -14,12 +14,12 @@
   }
 }
 
-.blog-roll--date {
+.date {
   color: var(--black-100);
   font-size: var(--fs-small);
 }
 
-.blog-roll--taxonomy {
+.taxonomy {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,6 +29,6 @@
   }
 }
 
-.blog-roll--taxonomy--label {
+.taxonomyLabel {
   font-size: var(--fs-small);
 }

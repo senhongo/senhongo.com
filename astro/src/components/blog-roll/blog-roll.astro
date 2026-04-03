@@ -5,6 +5,8 @@ import FlexCol from '@/components/layouts/flex-col.astro';
 import Pill from '@/components/taxonomy/pill.astro';
 import PillList from '@/components/taxonomy/pill-list.astro';
 
+import styles from './blog-roll.module.scss';
+
 interface Props {
   posts: CollectionEntry<'blog'>[];
 }
@@ -15,21 +17,21 @@ const { posts } = Astro.props;
 {
   posts.map((post) => (
     <FlexCol>
-      <span class="blog-roll--date">{post.data.date}</span>
+      <span class={styles.date}>{post.data.date}</span>
 
-      <header class="blog-roll--header">
+      <header class={styles.header}>
         <h2>
-          <a class="blog-roll--title" href={`/blog/${post.id}`}>
+          <a class={styles.title} href={`/blog/${post.id}`}>
             {post.data.title}
           </a>
         </h2>
         <Pill type="categories" value={post.data.category} />
       </header>
 
-      <section class="blog-roll--taxonomy">
+      <section class={styles.taxonomy}>
         {post.data.series && (
           <span>
-            <span class="blog-roll--taxonomy--label">part of series: </span>
+            <span class={styles.taxonomyLabel}>part of series: </span>
             <Pill type="series" value={post.data.series} />
           </span>
         )}

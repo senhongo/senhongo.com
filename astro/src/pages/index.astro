@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import Layout from '@/components/layouts/default.astro';
-import BlogRoll from '@/components/blog-roll.astro';
+import BlogRoll from '@/components/blog-roll/blog-roll.astro';
 
 const posts = (await getCollection('blog'))
   .sort((a, b) =>
