@@ -18,19 +18,25 @@ I've ridden 34 days this season, most of it in Hakuba Valley.
 
 The season usually lasts till the first week of May but this has been an exceptionally warm and dry winter. I don't really like riding slush but I hope to still get a few more runs in this season.
 
-I've unintentionally replaced most of my gear because most of it broke.
+Most of my gear broke this season 😭
 
 #### First generation Burton Deep Thinker
 
 I think I bought it in 2018 and it's been my main board until last year when I got a Korua Dart. I still use it sometimes on days I feel like riding switch. It delaminated halfway riding down Tsugaike.
 
-I haven't replaced it yet, still unsure what to get.
+I can't describe the sadness I felt that day. I should blog about it.
 
 #### Smith Maze snowboard helmet
 
-I think I've also had this since 2018. A huge crack formed down the rear left where the strap is. The helmet has been through several hard knocks, a few of which I'm sure gave me a concussion.
+I think I've also had this since 2018. A huge crack formed down the rear left where the strap is. The helmet has been through several hard knocks so it was only a matter of time.
 
 I've replaced it with an Oakley Mod 1 Pro.
+
+#### Nitro Turbo Pro snowboard boots
+
+I've probably had this for 4 or 5 years. Both soles have started to peel off and water gets in.
+
+Replaced with a pair of Ride Lasso Pros.
 
 ## Social networking
 
