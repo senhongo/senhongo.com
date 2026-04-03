@@ -1,4 +1,4 @@
-.article--metadata {
+.metadata {
   font-size: var(--fs-small);
   display: flex;
   justify-content: space-between;
@@ -6,7 +6,7 @@
   color: var(--black-100);
 }
 
-.article--taxonomy {
+.taxonomy {
   text-align: right;
 
   > * + * {
@@ -19,7 +19,7 @@
   }
 }
 
-.article--contents {
+.contents {
   color: var(--black-500);
   overflow-wrap: break-word;
   hyphens: manual;
