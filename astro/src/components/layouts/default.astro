@@ -12,6 +12,7 @@
 */
 
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+import { sitemap } from '@/content/sitemap';
 import BaseHead from '@/components/BaseHead.astro';
 
 import styles from './layout.module.scss';
@@ -74,13 +75,17 @@ const { title } = Astro.props;
         </section>
 
         <section class={footer.body}>
-          <nav class={footer.nav}>
-            <a href="/now">Now</a>
-            <a href="/blog">Blog</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="https://millefeuille.app">Millefeuille</a>
-          </nav>
+          <section class={footer.sitemap}>
+            {
+              sitemap.map((section) => (
+                <nav class={footer.nav}>
+                  {section.links.map((link) => (
+                    <a href={link.url}>{link.label}</a>
+                  ))}
+                </nav>
+              ))
+            }
+          </section>
 
           <div class={footer.credits}>
             <p>&#169; Sen Hongo</p>
