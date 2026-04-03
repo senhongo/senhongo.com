@@ -1,8 +1,11 @@
-// TODO make this a generic body section style
-.taxonomy {
+.taxonomy-container {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.taxonomy--label {
+  font-size: var(--fs-small);
 }
 
 .pill-list {
