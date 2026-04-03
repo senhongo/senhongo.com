@@ -1,0 +1,53 @@
+.site--title {
+  margin-top: 5rem; // magic number, roughly height of header
+  padding-inline: 1rem;
+  font-style: italic;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-extralarge);
+
+  * {
+    padding-inline: 1rem;
+    border-bottom: 1px solid var(--black-300);
+  }
+
+  @media only screen and (width > 430px) {
+    margin-top: 7rem; // magic number, roughly height of header
+  }
+}
+
+.site--main {
+  margin-top: 1rem;
+  padding-inline: 1rem;
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.millefeuille-pr {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+
+  .millefeuille-cta {
+    align-self: center;
+  }
+}
+
+.millefeuille-cta {
+  background-color: color-mix(in srgb, var(--rose-300) 50%, transparent);
+  color: var(--ivory-100);
+  border: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: var(--fs-base);
+  white-space: nowrap;
+
+  box-shadow: var(--shadow);
+}
+
+.millefeuille-catchphrase {
+  font-size: var(--fs-extralarge);
+  font-weight: var(--fw-bold);
+}
