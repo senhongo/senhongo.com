@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
+import FlexCol from '@/components/layouts/flex-col.astro';
 import Pill from '@/components/taxonomy/pill.astro';
 import PillList from '@/components/taxonomy/pill-list.astro';
 
@@ -13,7 +14,7 @@ const { posts } = Astro.props;
 
 {
   posts.map((post) => (
-    <article class="blog-roll">
+    <FlexCol>
       <span class="blog-roll--date">{post.data.date}</span>
 
       <header class="blog-roll--header">
@@ -42,6 +43,6 @@ const { posts } = Astro.props;
           )}
         </span>
       </section>
-    </article>
+    </FlexCol>
   ))
 }

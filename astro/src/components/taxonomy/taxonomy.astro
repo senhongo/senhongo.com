@@ -1,10 +1,11 @@
 ---
+import FlexCol from '@/components/layouts/flex-col.astro';
 import Tags from './tags.astro';
 import Series from './series.astro';
 import Categories from './categories.astro';
 ---
 
-<div class="taxonomy-container">
+<FlexCol>
   <section>
     <span class="taxonomy--label">Categories</span>
     <Categories />
@@ -19,4 +20,4 @@ import Categories from './categories.astro';
     <span class="taxonomy--label">Series</span>
     <Series />
   </section>
-</div>
+</FlexCol>
