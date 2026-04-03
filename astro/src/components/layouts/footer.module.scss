@@ -1,4 +1,4 @@
-.footer {
+.root {
   padding: 0;
   margin-top: 3rem;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.footer--wrapper {
+.wrapper {
   background: var(--millefeuille-hero-bg);
 
   border-top-left-radius: 1rem;
@@ -26,7 +26,7 @@
   }
 }
 
-.footer--body {
+.body {
   padding: 1rem;
   background: color-mix(in srgb, var(--black-300) 20%, transparent);
   border-radius: 0.75rem;
@@ -50,7 +50,7 @@
   }
 }
 
-.footer--nav {
+.nav {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -61,7 +61,7 @@
   }
 }
 
-.footer--credits {
+.credits {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,7 @@
     margin-top: 2rem;
   }
 }
-.footer--social {
+.social {
   display: flex;
   gap: 1rem;
   line-height: 0; // remove excess space around images

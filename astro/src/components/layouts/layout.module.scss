@@ -1,4 +1,4 @@
-.site--title {
+.title {
   margin-top: 5rem; // magic number, roughly height of header
   padding-inline: 1rem;
   font-style: italic;
@@ -15,7 +15,7 @@
   }
 }
 
-.siteMain {
+.main {
   margin-top: 1rem;
   padding-inline: 2rem;
 
@@ -24,19 +24,19 @@
   }
 }
 
-.millefeuille-pr {
+.millefeuillePr {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   text-align: center;
 
-  .millefeuille-cta {
+  .millefeuilleCta {
     align-self: center;
   }
 }
 
-.millefeuille-cta {
+:link.millefeuilleCta {
   background-color: color-mix(in srgb, var(--rose-300) 50%, transparent);
   color: var(--ivory-100);
   border: 0;
@@ -48,7 +48,7 @@
   box-shadow: var(--shadow);
 }
 
-.millefeuille-catchphrase {
+.millefeuilleCatchphrase {
   font-size: var(--fs-extralarge);
   font-weight: var(--fw-bold);
 }
