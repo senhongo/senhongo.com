@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   font-style: italic;
-  padding-inline: 1rem;
   color: var(--black-100);
 }
 
@@ -21,8 +20,6 @@
 }
 
 .article--contents {
-  padding-inline: 1rem;
-  margin-top: 1rem;
   color: var(--black-500);
   overflow-wrap: break-word;
   hyphens: manual;
