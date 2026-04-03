@@ -1,5 +1,6 @@
 ---
 import classnames from 'classnames';
+import styles from './taxonomy.module.scss';
 
 interface Props {
   className?: string;
@@ -8,6 +9,6 @@ interface Props {
 const { className } = Astro.props;
 ---
 
-<div class={classnames('pill-list', className)}>
+<div class={classnames(styles.pillList, className)}>
   <slot />
 </div>
