@@ -1,0 +1,25 @@
+---
+import FlexCol from '@/components/layouts/flex-col.astro';
+import Tags from './tags.astro';
+import Series from './series.astro';
+import Categories from './categories.astro';
+
+import styles from './taxonomy.module.scss';
+---
+
+<FlexCol>
+  <section>
+    <span class={styles.label}>Categories</span>
+    <Categories />
+  </section>
+
+  <section>
+    <span class={styles.label}>Tags</span>
+    <Tags />
+  </section>
+
+  <section>
+    <span class={styles.label}>Series</span>
+    <Series />
+  </section>
+</FlexCol>

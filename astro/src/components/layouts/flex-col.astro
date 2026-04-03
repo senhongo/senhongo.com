@@ -1,0 +1,14 @@
+---
+import styles from './layout.module.scss';
+import classnames from 'classnames';
+
+interface Props {
+  classname?: string;
+}
+
+const { classname } = Astro.props;
+---
+
+<section class={classnames(styles.section, classname)}>
+  <slot />
+</section>

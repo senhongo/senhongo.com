@@ -1,5 +1,6 @@
 ---
 import classnames from 'classnames';
+import styles from './taxonomy.module.scss';
 
 interface Props {
   value: string;
@@ -10,6 +11,9 @@ interface Props {
 const { value, type, className } = Astro.props;
 ---
 
-<a class={classnames('pill', className, type)} href={`/${type}/${value}`}>
+<a
+  class={classnames(styles.pill, className, styles[type])}
+  href={`/${type}/${value}`}
+>
   {value}
 </a>

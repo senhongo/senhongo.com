@@ -1,0 +1,31 @@
+.label {
+  font-size: var(--fs-small);
+}
+
+.pillList {
+  display: flex;
+  gap: 0.25rem 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: var(--fs-small);
+  align-self: center; // self declare because not all pills are inside a pill-list
+
+  &.tags {
+    background-color: var(--rose-100);
+    color: var(--black-500);
+  }
+
+  &.categories {
+    background-color: var(--ivory-300);
+    color: var(--black-100);
+  }
+
+  &.series {
+    background-color: var(--green-100);
+    color: var(--ivory-500);
+  }
+}

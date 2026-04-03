@@ -4,18 +4,20 @@ import { type CollectionEntry } from 'astro:content';
 import Pill from '@/components/taxonomy/pill.astro';
 import PillList from '@/components/taxonomy/pill-list.astro';
 
+import styles from './article.module.scss';
+
 type Props = CollectionEntry<'blog'>['data'];
 
 const { date, updatedDate, category, series, tags } = Astro.props;
 ---
 
-<div class="article--metadata">
+<div class={styles.metadata}>
   <section>
     <p>published: {date}</p>
     {updatedDate && <p>updated: {updatedDate}</p>}
   </section>
 
-  <section class="article--taxonomy">
+  <section class={styles.taxonomy}>
     {
       category && (
         <section>
@@ -48,6 +50,6 @@ const { date, updatedDate, category, series, tags } = Astro.props;
   </section>
 </div>
 
-<article class="article--contents">
+<article class={styles.contents}>
   <slot />
 </article>

@@ -1,6 +1,22 @@
 ---
-import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
-import BaseHead from "@/components/BaseHead.astro";
+/**
+  This is the default layout component to be used for all pages.
+
+  There are 2 slots
+    - header
+    - unnamed default
+
+  The header slot defaults to a generic BaseHead component if unspecified.
+
+  The unnamed slot is for content going inside <main>
+*/
+
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+import BaseHead from '@/components/BaseHead.astro';
+
+import styles from './layout.module.scss';
+import header from './header.module.scss';
+import footer from './footer.module.scss';
 
 interface Props {
   title: string;
@@ -12,51 +28,53 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <slot name="head">
+      <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </slot>
   </head>
   <body>
-    <header class="header--container">
-      <div class="header">
-        <p class="site-logo">
+    <header class={header.container}>
+      <div class={header.root}>
+        <p class={header.siteLogo}>
           <a href="/">Sen Hongo</a>
         </p>
 
-        <nav class="header--nav">
+        <nav class={header.nav}>
           <a href="/now">Now</a>
           <a href="/blog">Blog</a>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
 
-        <a class="millefeuille-cta" href="https://millefeuille.app">
+        <a class={styles.millefeuilleCta} href="https://millefeuille.app">
           Try Millefeuille
         </a>
       </div>
     </header>
 
-    <section class="site--title">
+    <section class={styles.title}>
       <h1>{title}</h1>
     </section>
 
-    <main class="site--main">
+    <main class={styles.main}>
       <slot />
     </main>
 
-    <footer class="footer">
-      <div class="footer--wrapper">
-        <section class="millefeuille-pr">
-          <p class="millefeuille-catchphrase">
+    <footer class={footer.root}>
+      <div class={footer.wrapper}>
+        <section class={styles.millefeuillePr}>
+          <p class={styles.millefeuilleCatchphrase}>
             A million layers of <br />
             pure financial goodness
           </p>
 
-          <a href="https://millefeuille.app" class="millefeuille-cta">
+          <a href="https://millefeuille.app" class={styles.millefeuilleCta}>
             Try Millefeuille.app
           </a>
         </section>
 
-        <section class="footer--body">
-          <nav class="footer--nav">
+        <section class={footer.body}>
+          <nav class={footer.nav}>
             <a href="/now">Now</a>
             <a href="/blog">Blog</a>
             <a href="/about">About</a>
@@ -64,10 +82,10 @@ const { title } = Astro.props;
             <a href="https://millefeuille.app">Millefeuille</a>
           </nav>
 
-          <div class="footer--credits">
+          <div class={footer.credits}>
             <p>&#169; Sen Hongo</p>
 
-            <nav class="footer--social">
+            <nav class={footer.social}>
               <a href="https://github.com/senhongo">
                 <img src="/github-mark.png" width="30" />
               </a>
