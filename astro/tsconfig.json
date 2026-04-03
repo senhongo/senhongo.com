@@ -16,11 +16,10 @@
       "esnext"
     ],
     "incremental": true,
-    "baseUrl": ".",
     "strictNullChecks": true,
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
     }
   }
