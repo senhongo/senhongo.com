@@ -1,6 +1,20 @@
 ---
+/**
+  This is the default layout component to be used for all pages.
+
+  There are 2 slots
+    - header
+    - unnamed default
+
+  The header slot defaults to a generic BaseHead component if unspecified.
+
+  The unnamed slot is for content going inside <main>
+*/
+
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 import BaseHead from '@/components/BaseHead.astro';
+
+import styles from './layout.module.scss';
 
 interface Props {
   title: string;
@@ -40,7 +54,8 @@ const { title } = Astro.props;
       <h1>{title}</h1>
     </section>
 
-    <main class="site--main">
+    <main class={styles.siteMain}>
+      <!-- <main class="site--main"> -->
       <slot />
     </main>
 
