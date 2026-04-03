@@ -1,3 +1,5 @@
+![picture of me](@/assets/images/profile.jpg)
+
 Hello! 👋
 
 I'm Sen Hongo, snowboarder and software developer and the founder of bootstrapped start up [Millefeuille], a personal finance manager.
