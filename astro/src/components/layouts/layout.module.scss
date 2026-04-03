@@ -36,9 +36,9 @@
   }
 }
 
-:link.millefeuilleCta {
+.millefeuilleCta {
   background-color: color-mix(in srgb, var(--rose-300) 50%, transparent);
-  color: var(--ivory-100);
+
   border: 0;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
@@ -46,6 +46,13 @@
   white-space: nowrap;
 
   box-shadow: var(--shadow);
+
+  &:link,
+  &:visited,
+  &:link:active,
+  &:visited:active {
+    color: var(--ivory-100);
+  }
 }
 
 .millefeuilleCatchphrase {
