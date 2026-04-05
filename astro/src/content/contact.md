@@ -1,3 +1,5 @@
-Maybe have some kind of form here?
+You can find me on
 
-Or link to LinkedIn, or Twitter, or Bluesky?
+- Instagram under [sen.rides.snowboard](https://www.instagram.com/sen.rides.snowboard/)
+- ~~Twitter~~ X (coming soon)
+- Bluesky (coming soon)
