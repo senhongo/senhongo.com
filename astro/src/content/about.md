@@ -4,7 +4,11 @@ Hello! 👋
 
 I'm Sen Hongo, snowboarder and software developer and the founder of bootstrapped start up [Millefeuille], a personal finance manager.
 
-Previously worked on:
+I was born and bred in Singapore, then I emigrated to Japan and have been living here for over 20 years.
+
+I have a lot of interests but my primary hobby is snowboarding. I love it so much I [moved from Tokyo to Nagano](/blog/shoveling-snow) so that I could snowboard everyday.
+
+Interesting (to me) stuff that I've previously worked on.
 
 - [Chubic]
 - [fundbook]
@@ -14,11 +18,13 @@ Previously worked on:
 - [Profit X]
 - Procare Solutions Electronic Medical Records
 
-## About blog
+## About the blog
 
-It's supposedly a dev blog but now it's mostly just personal ramblings. Sorry.
+It's supposedly a dev blog but most of it is just me rambling about stuff. Sorry.
 
-This blog is built using [Astro] and hosted on Cloudflare. The [source] is available if you'd like to take a look.
+I started blogging in 2016 using Jekyll, then Wintersmith, then Hugo. I re-wrote everything in Next.js back in 2021 and accidentally deleted all the previous content.
+
+The current version you're looking at is built using [Astro]. The [source] is available if you'd like to take a look.
 
 [Millefeuille]: https://millefeuille.app
 [Chubic]: https://chubic.com
