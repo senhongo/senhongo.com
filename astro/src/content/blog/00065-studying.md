@@ -7,7 +7,7 @@ tags: [cpta, 税理士, 簿財]
 category: study notes
 ---
 
-First off, I'm taking the 簿記論 (Bookkeeping) and 財務諸表論 (Financial Statements) exams this August.
+First off, I'm taking the 簿記論 (Bookkeeping Theory) and 財務諸表論 (Financial Statements Theory) exams this August.
 
 ## Challenges
 
@@ -43,11 +43,11 @@ Then of course there's the notes I'll be publishing on this blog.
 
 I'm really just making it up as I go.
 
-I've never been particularly good at this kind of rote memorisation, heavy regurgitation style of studying. We'll see how it goes. The thing is, these are just the fundamentals. There next 3 subjects are on tax laws, requiring even*more* memorisation and regurgitation of endless jargon. If I can't pass even these two subjects, I have no hope of passing the tax law ones.
+I've never been particularly good at this kind of rote memorisation, heavy regurgitation style of studying. We'll see how it goes. The thing is, these are just the fundamentals. There next 3 subjects are on tax laws, requiring even _more_ memorisation and regurgitation of endless jargon. If I can't pass even these two subjects, I have no hope of passing the tax law ones.
 
-I honestly think that I can pass the book keeping exams even with only four months of study. Yes yes, ego, hubris, the arrogance of a tech bro that thinks nothing is harder than software engineering, can you even reverse a b-tree?! blah blah blah. It's just math! _How hard can it be?_
+That said, I actually think that I can pass the book keeping exams even with only four months of study. Yes yes, ego, hubris, the arrogance of a tech bro that thinks nothing is harder than software engineering, can you even reverse a b-tree?! blah blah blah. It's just math! _How hard can it be?_
 
-I'm not that confident about the financial statements one. Let's loop back on this again at the end of April, once I've done more of the course work and have a better understanding of how deep of a shithole I've dug myself into.
+I'm not as confident about the financial statements one though. Let's loop back on this again at the end of April, once I've done more of the course work and have a better understanding of how deep of a shithole I've dug myself into.
 
 It's hard. That's why it's worth doing.
 
