@@ -17,13 +17,17 @@ One big challenge for me is that I'm not a native speaker. While I've lived here
 
 I've had experience creating issues, PRs and even documentation in Japanese when I was still employed, but I had the benefit of using the device in front of me. Typing is much easier than writing as I only have to know how a kanji is spelled, the computer does the actual writing.
 
-## Exam contents
+## The exams
 
-What from I can tell of the exams, the bookkeeping exams are mostly mathematical in nature, which is why I actually feel confident taking this subject.
+Based on what I've seen of the past year's exams, the bookkeeping exams are mostly mathematical in nature, which is why I actually feel confident taking this subject.
 
 The financial statements one though, requires memorising a large amount of jargon, and writing large amounts of texts using said jargon.
 
 Obviously, the exams are in person, hand written with a pen. Each subject is 2 hours long.
+
+There are 3 sections, sections 1 and 2 are 'easier' as the questions are created by professors and tend to be more academic in nature. 'What does the law say regarding X', 'How financial statements help?' etc. The recommended time for those sections is no more than 20 - 30 minutes each.
+
+The final third section is very much harder. It's managed by industry professionals based on contemporary real world scenarios. It's so hard that it's not actually feasible to complete all of it, but it's also the highest scoring section.
 
 ## What do?
 
