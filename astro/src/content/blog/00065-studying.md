@@ -15,7 +15,7 @@ My honest assessment is that I will not pass this year, because most people requ
 
 One big challenge for me is that I'm not a native speaker. While I've lived here in Japan for over 20 years and can speak rather fluently, I have also struggled to write long, proper essays. Now this isn't really an issue restricted to Japanese, I suck at writing essays no matter the language. Doing so in Japanese is just harder.
 
-Obviously, I've created issues, PRs and even wikis in Japanese when I was still employed, but I had the benefit of using the device in front of me. Typing is much easier than writing as I only have to know how a kanji is spelled, the computer does the actual writing.
+I've had experience creating issues, PRs and even documentation in Japanese when I was still employed, but I had the benefit of using the device in front of me. Typing is much easier than writing as I only have to know how a kanji is spelled, the computer does the actual writing.
 
 ## Exam contents
 
