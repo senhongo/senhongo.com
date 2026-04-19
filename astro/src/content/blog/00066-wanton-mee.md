@@ -9,7 +9,7 @@ category: recipe
 
 ![Wanton mee 雲呑麺](@/assets/images/recipe/wantonmee.JPG)
 
-There are few things I miss from Singapore. Wanton mee is among the top of them. This recipe is as close enough to what I remember having as a kid.
+I don't miss much from Singapore, wanton mee is one of those. This recipe is as close enough to what I remember having as a kid.
 
 ## Charsiew
 
