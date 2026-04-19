@@ -50,7 +50,7 @@ Portions are relative to each other
 
 ## sauce for Wanton noodles
 
-I used whatever ingredients I had, recipes elsewhere differs a bit. Volume is a guide as I don't use measuring spoons. I just pour the the sauces straight from the bottle into the pan and eye ball it.
+I used whatever ingredients I had, recipes elsewhere differs a bit. Volume is a guide as I don't use measuring spoons. I just pour the sauces straight from the bottle into the pan and eyeballed it.
 
 ### Ingredients
 
