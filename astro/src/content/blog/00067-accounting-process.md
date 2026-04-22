@@ -5,6 +5,7 @@ description: Notes from my CPTA studies, mainly the foundation section of the �
 series: CPTA
 tags: [cpta, 税理士, 簿財]
 category: study notes
+wip: true
 ---
 
 Quick summary
