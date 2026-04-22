@@ -1,0 +1,47 @@
+---
+import Layout from '@/components/layouts/default.astro';
+
+import { getCollection } from 'astro:content';
+
+import { Content } from '@/__content/pages/cpta.md';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => post.data.series === 'CPTA')
+  .sort((a, b) =>
+    a.data.date.localeCompare(b.data.date, undefined, { numeric: true }),
+  );
+
+const studyNotes = posts.filter((note) => note.data.category === 'study notes');
+---
+
+<Layout title="Becoming a Certified Public Tax Accountant in Japan">
+  <Content />
+
+  <section>
+    <h2>Glossary</h2>
+
+    <p>blah blah</p>
+  </section>
+
+  <p>posts: {posts.length}</p>
+  <p>studyNotes: {studyNotes.length}</p>
+
+  <ul>
+    {posts.map((post) => <li>{post.data.title}</li>)}
+  </ul>
+
+  <!-- <table>
+    <thead>
+      <tr>
+        <th>Articles</th>
+        <th>Study Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>article 1</td>
+        <td>study note 1</td>
+      </tr>
+    </tbody>
+  </table> -->
+</Layout>
