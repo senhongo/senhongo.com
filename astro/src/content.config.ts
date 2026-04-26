@@ -5,7 +5,7 @@ import { glob } from 'astro/loaders';
 const blog = defineCollection({
   // Load Markdown and MDX files in the `src/content/blog/` directory.
   loader: glob({
-    base: './src/content/blog',
+    base: './src/__content/articles',
     pattern: '**/*.{md,mdx}',
     generateId: ({ entry }) =>
       entry
