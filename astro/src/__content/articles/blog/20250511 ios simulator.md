@@ -7,7 +7,7 @@ tags: [iOS, safari]
 category: dev
 ---
 
-![screenshot of the iPhone Simulator showing the current website](@/assets/images/blog/ios-simulator.png)
+![screenshot of the iPhone Simulator showing the current website](@/__content/images/blog/ios-simulator.png)
 
 While developing this website, I noticed that the responsive design mode in Safari looked different than when actually looking at the site from my phone.
 

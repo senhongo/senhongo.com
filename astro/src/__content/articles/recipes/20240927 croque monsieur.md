@@ -7,7 +7,7 @@ tags: []
 category: recipe
 ---
 
-![Croque Monsieur and Croque Madame](@/assets/images/recipe/croque-monsieur.jpg)
+![Croque Monsieur and Croque Madame](@/__content/images/recipe/croque-monsieur.jpg)
 
 ## Ingredients
 

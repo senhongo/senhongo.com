@@ -1,4 +1,4 @@
-![picture of me](@/assets/images/profile.jpg)
+![picture of me](@/__content/images/profile.jpg)
 
 Hello! 👋
 

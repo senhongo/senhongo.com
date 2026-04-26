@@ -7,6 +7,6 @@ tags: [blog]
 category: dev
 ---
 
-![screenshot of updated senhongo.com](@/assets/images/blog/blog-design-updated-3.png)
+![screenshot of updated senhongo.com](@/__content/images/blog/blog-design-updated-3.png)
 
 Designs updated for Tablet as the iPad Mini is my main web browsing device.

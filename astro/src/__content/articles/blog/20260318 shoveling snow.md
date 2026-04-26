@@ -9,7 +9,7 @@ category: thoughts
 
 I've been a city boy my entire life. I grew up in the concrete jungle of Singapore, went to uni in Kobe then worked in the cities of Osaka, Tokyo and Sendai. Now, I live in the mountains of Nagano. How'd that happen?!
 
-![View of Nakatsuna from the bottom of Kashimayari ski resort](@/assets/images/blog/peace.jpg)
+![View of Nakatsuna from the bottom of Kashimayari ski resort](@/__content/images/blog/peace.jpg)
 
 Snow has always fascinated me but as a kid growing up in Singapore, snow was never real. It was something on the telly, often during the months of December to February. It looked interesting and I've always wondered what snow felt like to touch, what a properly cold winter might feel like, how people survive in such conditions and even why people don't move somewhere more convenient.
 
@@ -23,4 +23,4 @@ I loved every moment of it. Not the actual shoveling, that would be silly. No, i
 
 So here I am.
 
-![My little van buried after a snow storm](@/assets/images/blog/snow.jpeg)
+![My little van buried after a snow storm](@/__content/images/blog/snow.jpeg)
