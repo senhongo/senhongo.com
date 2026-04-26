@@ -7,8 +7,8 @@ tags: [blog]
 category: dev
 ---
 
-![screenshot of updated senhongo.com](@/assets/images/blog/blog-design-updated-1.png)
-![screenshot of updated senhongo.com](@/assets/images/blog/blog-design-updated-2.png)
+![screenshot of updated senhongo.com](@/__content/images/blog/blog-design-updated-1.png)
+![screenshot of updated senhongo.com](@/__content/images/blog/blog-design-updated-2.png)
 
 Just a simple note that the blog design has been updated! Currently only the mobile styles have been done but it seems to (mostly) work fine for larger screens.
 

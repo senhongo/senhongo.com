@@ -7,7 +7,7 @@ tags: []
 category: thoughts
 ---
 
-![photo of the Pacific Ocean from Tokushima](@/assets/images/blog/tokushima.jpg)
+![photo of the Pacific Ocean from Tokushima](@/__content/images/blog/tokushima.jpg)
 
 Last week was the Obon holidays in Japan, so I decided to take some well needed time off away from [Chubic] as I was starting to feel quite burnt out and unable to focus.
 

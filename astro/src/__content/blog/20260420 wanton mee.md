@@ -7,13 +7,13 @@ tags: [wanton, noodles]
 category: recipe
 ---
 
-![Wanton mee 雲呑麺](@/assets/images/recipe/wantonmee.JPG)
+![Wanton mee 雲呑麺](@/__content/images/recipe/wantonmee.JPG)
 
 I don't miss much from Singapore, wanton mee is one of those. This recipe is as close enough to what I remember having as a kid.
 
 ## Charsiew
 
-![charsiew on the grill](@/assets/images/recipe/charsiew.JPG)
+![charsiew on the grill](@/__content/images/recipe/charsiew.JPG)
 
 ### Ingredients
 

@@ -9,4 +9,4 @@ category: blog
 
 A new [colour palette](/colours) I've chosen for this blog.
 
-![colour palette for senhongo.com](@/assets/images/blog/colour-palette.png)
+![colour palette for senhongo.com](@/__content/images/blog/colour-palette.png)

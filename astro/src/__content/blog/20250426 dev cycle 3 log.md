@@ -9,7 +9,7 @@ category: work log
 
 ## What I did
 
-![mockup of the Transactions form in Whimsical](@/assets/images/blog/millefeuille-poc-form.png)
+![mockup of the Transactions form in Whimsical](@/__content/images/blog/millefeuille-poc-form.png)
 
 I actually didn't do much this week as work at [Chubic] kept me busy.
 

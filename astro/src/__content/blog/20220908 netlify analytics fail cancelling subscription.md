@@ -9,4 +9,4 @@ category: dev
 
 Redirecting bot traffic to ROOT turns them into legit traffic in the eyes of Netlify. Useless, subscription cancelled.
 
-![netlifyfail](@/assets/images/blog/netlify-fail.png)
+![netlifyfail](@/__content/images/blog/netlify-fail.png)

@@ -7,7 +7,7 @@ tags: []
 category: recipe
 ---
 
-![Bak Kut Teh 肉骨茶](@/assets/images/recipe/bak-kut-teh.jpg)
+![Bak Kut Teh 肉骨茶](@/__content/images/recipe/bak-kut-teh.jpg)
 
 ## Ingredients
 
