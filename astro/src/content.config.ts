@@ -9,9 +9,10 @@ const blog = defineCollection({
     pattern: '**/*.{md,mdx}',
     generateId: ({ entry }) =>
       entry
-        .substring(6)
+        // Converts '20260101 spaced title.md' to 'spaced-title'
+        .replace(/^\d+\s/, '') // Remove date index
         .replace(/\s+/g, '-') // Replace space with hyphen
-        .replace(/\.md|x$/, ''), // Remove the prepended index and .mdx file name
+        .replace(/\.md|x$/, ''), // Remove md, mdx file name
   }),
   // Type-check frontmatter using a schema
   schema: () =>
