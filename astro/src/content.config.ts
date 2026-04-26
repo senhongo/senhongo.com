@@ -10,7 +10,7 @@ const blog = defineCollection({
     generateId: ({ entry }) =>
       entry
         // Converts '20260101 spaced title.md' to 'spaced-title'
-        .replace(/^\d+\s/, '') // Remove date index
+        .replace(/^\d+\s/, '') // Remove date index and space between date and title
         .replace(/\s+/g, '-') // Replace space with hyphen
         .replace(/\.md|x$/, ''), // Remove md, mdx file name
   }),
