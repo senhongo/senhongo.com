@@ -43,10 +43,10 @@ function prettifySlug(entry: string) {
   // console.log('entry', entry);
 
   const slug = entry
-    .replace(/^[^_]*\//, '') // Remove date index and space between date and title
-    .replace(/^\d+\s/, '') // Remove date index and space between date and title
-    .replace(/\s+/g, '-') // Replace space with hyphen
-    .replace(/\.md|x$/, ''); // Remove md, mdx file name
+    .replace(/^[^_]*\//, '') // Remove folder/
+    .replace(/^\d+\s/, '') // Remove date and space between date and title
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/\.md|x$/, ''); // Remove md, mdx extension
 
   // Uncomment to display output
   // console.log('slug', slug);
