@@ -36,6 +36,10 @@ Useful for wrapping the entire page
   width: 1000px;
 }
 
+.min-col-width-40 {
+  --grid-min-col-size: 40ch;
+}
+
 // force items to the display on the right
 .flex-right {
   margin-left: auto;

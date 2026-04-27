@@ -1,9 +1,8 @@
 ---
-import Layout from '@/components/layouts/default.astro';
-
 import { getCollection } from 'astro:content';
-
 import { Content } from '@/__content/pages/cpta.md';
+import Layout from '@/components/layouts/default.astro';
+import BlogRoll from '@/components/blog-roll/blog-roll.astro';
 
 const allBlogPosts = (await getCollection('blog'))
   .filter((post) => post.data.series === 'CPTA')
@@ -30,15 +29,15 @@ const studyNotes = allBlogPosts.filter(
 
   <p>tag cloud</p>
 
-  <div class="grid-auto-fill">
+  <div class="grid-auto-fill min-col-width-40">
     <div>
       <h3>Posts ({posts.length})</h3>
-      {posts.map((post) => <p>{post.data.title}</p>)}
+      <BlogRoll posts={posts} />
     </div>
 
     <div>
       <h3>Study Notes ({studyNotes.length})</h3>
-      {studyNotes.map((post) => <p>{post.data.title}</p>)}
+      <BlogRoll posts={studyNotes} />
     </div>
   </div>
 </Layout>
