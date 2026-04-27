@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import { Content } from '@/__content/pages/cpta.md';
 import Layout from '@/components/layouts/default.astro';
-import BlogRoll from '@/components/blog-roll/blog-roll.astro';
+import BlogRoll from '@/components/blog-roll/blog-roll--simple.astro';
 
 const allBlogPosts = (await getCollection('blog'))
   .filter((post) => post.data.series === 'CPTA')
@@ -32,12 +32,12 @@ const studyNotes = allBlogPosts.filter(
   <div class="grid-auto-fill min-col-width-40">
     <div>
       <h3>Posts ({posts.length})</h3>
-      <BlogRoll posts={posts} />
+      <BlogRoll posts={posts} hideCategory hideSeries hideTags />
     </div>
 
     <div>
       <h3>Study Notes ({studyNotes.length})</h3>
-      <BlogRoll posts={studyNotes} />
+      <BlogRoll posts={studyNotes} hideCategory hideSeries hideTags />
     </div>
   </div>
 </Layout>
