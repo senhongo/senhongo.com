@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import { Content } from '@/__content/pages/cpta.md';
+import Layout from '@/components/layouts/default.astro';
+import BlogRoll from '@/components/blog-roll/blog-roll--simple.astro';
+import PillList from '@/components/taxonomy/pill-list.astro';
+import Pill from '@/components/taxonomy/pill.astro';
+
+const allBlogPosts = (await getCollection('blog'))
+  .filter((post) => post.data.series === 'CPTA')
+  .sort((a, b) =>
+    a.data.date.localeCompare(b.data.date, undefined, { numeric: true }),
+  );
+
+const tags = [...new Set(allBlogPosts.flatMap((post) => post.data.tags))];
+
+const posts = allBlogPosts.filter(
+  (note) => note.data.category !== 'study notes',
+);
+const studyNotes = allBlogPosts.filter(
+  (note) => note.data.category === 'study notes',
+);
+---
+
+<Layout title="Becoming a Certified Public Tax Accountant in Japan">
+  <Content />
+
+  <section>
+    <h2>Contents</h2>
+
+    <ul>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#study-notes">Study Notes</a></li>
+      <li><a href="#tags">Tags</a></li>
+      <li>
+        <a href="/cpta/dictionary">Japanese Accounting Dictionary (WIP)</a>
+      </li>
+      <li><a href="/cpta/bs">Balance Sheet (WIP)</a></li>
+      <li><a href="/cpta/pnl">Profit and Loss Statement (WIP)</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="tags">Tags</h2>
+    <PillList>
+      {tags.map((tag) => <Pill value={tag} type="tags" />)}
+    </PillList>
+  </section>
+
+  <div class="grid-auto-fill min-col-width-40">
+    <div>
+      <h2 id="posts">Posts ({posts.length})</h2>
+      <BlogRoll posts={posts} hideCategory hideSeries hideTags />
+    </div>
+
+    <div>
+      <h2 id="study-notes">Study Notes ({studyNotes.length})</h2>
+      <BlogRoll posts={studyNotes} hideCategory hideSeries hideTags />
+    </div>
+  </div>
+</Layout>

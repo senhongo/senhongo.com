@@ -28,6 +28,10 @@ export const sitemap = [
         url: '/blog',
       },
       {
+        label: 'CPTA Notes',
+        url: '/cpta',
+      },
+      {
         label: 'Categories',
         url: '/categories',
       },

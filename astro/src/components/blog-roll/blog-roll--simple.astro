@@ -1,0 +1,53 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import FlexCol from '@/components/layouts/flex-col.astro';
+import Pill from '@/components/taxonomy/pill.astro';
+import PillList from '@/components/taxonomy/pill-list.astro';
+
+import styles from './blog-roll.module.scss';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+  hideCategory?: boolean;
+  hideSeries?: boolean;
+  hideTags?: boolean;
+}
+
+const { posts, hideCategory, hideSeries, hideTags } = Astro.props;
+---
+
+{
+  posts.map((post) => (
+    <FlexCol>
+      <span class={styles.date}>{post.data.date}</span>
+
+      <header class={styles.header}>
+        <h3>
+          <a class={styles.title} href={`/blog/${post.id}`}>
+            {post.data.title}
+          </a>
+        </h3>
+        {!hideCategory && <Pill type="categories" value={post.data.category} />}
+      </header>
+
+      <section class={styles.taxonomy}>
+        {!hideSeries && post.data.series && (
+          <span>
+            <span class={styles.taxonomyLabel}>part of series: </span>
+            <Pill type="series" value={post.data.series} />
+          </span>
+        )}
+        <span class="flex-right">
+          {!hideTags && post.data.tags.length > 0 && (
+            <PillList>
+              {post.data.tags.map((tag) => (
+                <Pill value={tag} type="tags" />
+              ))}
+            </PillList>
+          )}
+        </span>
+      </section>
+    </FlexCol>
+  ))
+}

@@ -46,6 +46,7 @@ h5,
 h6,
 p {
   margin: 0;
+  scroll-margin-top: 100px;
 }
 
 h1 {
@@ -53,6 +54,9 @@ h1 {
 }
 h2 {
   font-size: var(--fs-large);
+}
+h3 {
+  font-size: var(--fs-medium);
 }
 
 // Quotes in content
@@ -79,49 +83,4 @@ pre {
   &:hover {
     text-decoration: underline;
   }
-}
-
-:root {
-  --grid-min-col-size: 250px;
-}
-
-/* Reusable responsive grid that sizes each column to the minimal size --grid-min-col-size var */
-.grid-auto-fill {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(var(--grid-min-col-size), 100%), 1fr)
-  );
-  gap: 1rem;
-
-  > * {
-    padding: 25px;
-    text-align: center;
-    // color: white;
-    text-transform: uppercase;
-  }
-
-  &.no-gap {
-    gap: 0;
-  }
-}
-/* the var defined in the root is a global min size but it can be overridden when used */
-.override-grid-col-size {
-  --grid-min-col-size: 200px;
-}
-
-/*
-A wrapper grid with 12 columns and a 1.5rem gutter 
-Useful for wrapping the entire page
-*/
-.wrapper-grid {
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  gap: 1.5rem;
-  // TODO: needs a max width
-}
-
-// for colours page
-.w500 {
-  width: 1000px;
 }
