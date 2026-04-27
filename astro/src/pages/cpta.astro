@@ -26,9 +26,14 @@ const studyNotes = allBlogPosts.filter(
   <Content />
 
   <section>
-    <h2>Glossary</h2>
+    <h2>Contents</h2>
 
-    <p>blah blah</p>
+    <ul>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#study-notes">Study Notes</a></li>
+      <li><a href="#tags">tags</a></li>
+      <!-- <li><a href="/glossary">glossary</a></li> -->
+    </ul>
   </section>
 
   <section>
@@ -40,12 +45,12 @@ const studyNotes = allBlogPosts.filter(
 
   <div class="grid-auto-fill min-col-width-40">
     <div>
-      <h3>Posts ({posts.length})</h3>
+      <h3 id="posts">Posts ({posts.length})</h3>
       <BlogRoll posts={posts} hideCategory hideSeries hideTags />
     </div>
 
     <div>
-      <h3>Study Notes ({studyNotes.length})</h3>
+      <h3 id="study-notes">Study Notes ({studyNotes.length})</h3>
       <BlogRoll posts={studyNotes} hideCategory hideSeries hideTags />
     </div>
   </div>
