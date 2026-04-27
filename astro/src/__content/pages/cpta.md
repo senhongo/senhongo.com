@@ -1,7 +1,5 @@
-what is this about
+For some [reason](/blog/jcpa/), I've been studying to be certified as a Tax Accountant in Japan.
 
-Structure and content of this page will change as I learn more.
+This page contains all the content I've created related to that.
 
-## Why?
-
-short 1 sentence blurb, read [article] for more
+Structure and content will change as I learn more.
