@@ -3,12 +3,16 @@ import { getCollection } from 'astro:content';
 import { Content } from '@/__content/pages/cpta.md';
 import Layout from '@/components/layouts/default.astro';
 import BlogRoll from '@/components/blog-roll/blog-roll--simple.astro';
+import PillList from '@/components/taxonomy/pill-list.astro';
+import Pill from '@/components/taxonomy/pill.astro';
 
 const allBlogPosts = (await getCollection('blog'))
   .filter((post) => post.data.series === 'CPTA')
   .sort((a, b) =>
     a.data.date.localeCompare(b.data.date, undefined, { numeric: true }),
   );
+
+const tags = [...new Set(allBlogPosts.flatMap((post) => post.data.tags))];
 
 const posts = allBlogPosts.filter(
   (note) => note.data.category !== 'study notes',
@@ -27,7 +31,12 @@ const studyNotes = allBlogPosts.filter(
     <p>blah blah</p>
   </section>
 
-  <p>tag cloud</p>
+  <section>
+    <h2 id="tags">Tags</h2>
+    <PillList>
+      {tags.map((tag) => <Pill value={tag} type="tags" />)}
+    </PillList>
+  </section>
 
   <div class="grid-auto-fill min-col-width-40">
     <div>
