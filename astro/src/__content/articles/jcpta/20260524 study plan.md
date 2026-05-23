@@ -3,7 +3,7 @@ title: CPTA Study Plans
 date: 2026/05/24
 description: My multi-year plans for getting a CPTA license.
 series: CPTA
-tags: [cpta, 税理士, 簿財]
+tags: []
 category: thoughts
 ---
 
