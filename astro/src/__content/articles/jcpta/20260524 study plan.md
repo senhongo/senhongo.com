@@ -21,7 +21,7 @@ It's simple.
 - 相続 and 消費 next year
 - 法人 in the final year
 
-That's assuming I pass all the exams as planned. The more realistic alternate is that I fail this year's 簿財 exams, and end up doing 簿財相 next year, and 消法 the final year.
+That's assuming I pass all the exams as planned. The more realistic alternative is that I fail this year's 簿財 exams, and end up doing 簿財相 next year, and 消法 the final year.
 
 The minutiae is that the results are only announced 4 months after the exams in December. In the meantime, all examinees are left in limbo but 4 months is valuable study time. So I plan to start studying 相続 in August and only pick up the 消費 classes in December after it's been confirmed that I've passed.
 
@@ -29,9 +29,9 @@ That's it. That's the plan.
 
 If everything works out, I'll be a pre-qualified tax accountant in 2029.
 
-## Reigniting motivation
+But this isn't really what I wanted to talk about.
 
-Here's the real meat.
+## Reigniting motivation
 
 Ever since last September, when I started pondering about what to do with the rest of my life and the faint thought of becoming a ~~CPA~~ CPTA somehow willed itself into existence, I've been struggling with motivation. I wasn't sure how much to dedicate myself to this quest. I still want to turn Millefeuille into an actual thing. I also had various other ideas I wanted to work on, home improvements and care that I've been putting off, health, life in general.
 
@@ -42,6 +42,8 @@ But last week, in the middle of watching the [mahouka] movie, I suddenly got _th
 It wasn't the movie or any one thing or other. It's really just a whole series of events and thoughts and experiences that began accumulating from last September until suddenly it just burst out of my mind.
 
 I have 2 months and a week until the exams.
+
+I will spend 90% of my time studying for them (leaving the remaining 10% for Life™).
 
 And I will ace those exams.
 
