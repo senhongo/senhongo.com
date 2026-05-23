@@ -33,13 +33,13 @@ But this isn't really what I wanted to talk about.
 
 ## Reigniting motivation
 
-Ever since last September, when I started pondering about what to do with the rest of my life and the faint thought of becoming a ~~CPA~~ CPTA somehow willed itself into existence, I've been struggling with motivation. I wasn't sure how much to dedicate myself to this quest. I still want to turn Millefeuille into an actual thing. I also had various other ideas I wanted to work on, home improvements and care that I've been putting off, health, life in general.
+Ever since last September, when I started pondering about what to do with the rest of my life and the faint thought of becoming a ~~CPA~~ CPTA somehow willed itself into existence, I've been struggling with motivation. I wasn't sure how much to dedicate myself to this quest. I still want to turn Millefeuille into an actual thing. I also had various other ideas I wanted to work on, home improvements and chores that I've been putting off, health, life in general.
 
 While I _wanted_ to pass the exams, I didn't feel the urge to. I continued studying because learning was fun but I had a lot of interruptions and somewhere at the back of mind, there was the feeling that it's not a big deal if I don't pass.
 
-But last week, in the middle of watching the [mahouka] movie, I suddenly got _the urge_. After the movie ended, I spent an hour at the lounge writing into my iPad mini. Some of those writings turned into this post, others turned into Github issues and tasks.
+But last week, in the middle of watching the [mahouka] movie, I suddenly got _the urge_. After the movie ended, I spent an hour at the lounge writing into my iPad mini. Some of those writings turned into this post while others turned into Github issues and tasks but that doesn't matter. What matters is that I've for the urge back.
 
-It wasn't the movie or any one thing or other. It's really just a whole series of events and thoughts and experiences that began accumulating from last September until suddenly it just burst out of my mind.
+It wasn't the movie or any one thing or other. (Beautiful movie BTW. Terrible story but amazing visuals.) I think it's just all the events and thoughts and experiences that began accumulating from last September until suddenly it just forced its way into my mind.
 
 I have 2 months and a week until the exams.
 
