@@ -1,9 +1,9 @@
 ---
 title: CPTA Study Plans
 date: 2026/05/24
-description: My multi-year plans for getting a CPTA license.
+description: My multi-year plans for getting a CPTA license and dealing with a lack of motivation.
 series: CPTA
-tags: []
+tags: [motivation]
 category: thoughts
 ---
 
