@@ -3,9 +3,5 @@
   "compatibility_date": "2026-05-23", // Update to the day you deploy
   "assets": {
     "directory": "./dist"
-  },
-  "vars": {
-    "NODE_VERSION": "24.16.0",
-    "PNPM_VERSION": "11.2.2"
   }
 }
