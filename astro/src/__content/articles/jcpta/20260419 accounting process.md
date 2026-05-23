@@ -3,7 +3,7 @@ title: 簿記一巡の手続 / Accounting Cycle
 date: 2026/04/19
 description: The Japanese Accounting cycle mostly the same with some slight differences
 series: CPTA
-tags: [cpta, 税理士, 簿財]
+tags: [motivation]
 category: study notes
 wip: true
 ---
