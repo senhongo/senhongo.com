@@ -1,5 +1,5 @@
 ---
-title: 三分法
+title: 三分法 / Three Column Method
 date: 2026/05/25
 description: Going into details about the three column running balance ledger
 series: CPTA
@@ -15,7 +15,7 @@ I'm not sure if the english Three Column Method is the right translation but it'
 
 - 仕入 : purchase
 - 売上 : sales
-- 繰越商品 : remaining inventory at end of period
+- 繰越商品 : carryover inventory
 
 When purchasing / selling
 
@@ -57,7 +57,7 @@ As a starting point, we have these values
 
 The values in the T table refer to the values at the beginning of a period 期首商品.
 
-### 決算整理仕訳
+#### 決算整理仕訳
 
 | 勘定科目 | 金額   | 勘定科目 | 金額   |
 | -------- | ------ | -------- | ------ |
@@ -70,7 +70,7 @@ The second row refers to values at the end of the period 期末.
 
 This is the standard 仕訳 and everyone must know how to create this, particularly for 簿記論.
 
-### 売上原価の計算
+#### 売上原価の計算
 
 As a generalisation
 
@@ -100,7 +100,7 @@ The left side sums up to 230,000, so the right side has to be the same value.
 
 Since the 期末商品 is 30,000, the answer is `80k + 150k - 30k = 200k`
 
-### 後 T/B の作成
+#### 後 T/B の作成
 
 This is how you calculate it
 
@@ -129,7 +129,7 @@ This is the final Trial Balance values.
 
 Calculate the 仕入 using the 原価BOX method.
 
-### 損益勘定、残高勘定
+#### 損益勘定、残高勘定
 
 Basically, use the value from the 後T/B.
 
@@ -156,7 +156,7 @@ The final calculations
 
 売上 and 繰越商品 values are directly from the initial statements. So we calculate the 仕入 using the 原価BOX method.
 
-### 会社計算規則の B/S, P/L
+#### 会社計算規則の B/S, P/L
 
 賃借対照表 B/S
 | 科目 | 金額 | 科目 | 金額 |
@@ -182,7 +182,7 @@ The final calculations
 | 期末商品棚卸高 | 30,000 | from 決算整理事項 |
 | 売上原価 | 200,000 ||
 
-### 略式 B/S, P/L
+#### 略式 B/S, P/L
 
 Simplified BS and PL without going into the details
 
