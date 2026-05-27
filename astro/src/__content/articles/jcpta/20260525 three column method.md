@@ -165,11 +165,22 @@ The final calculations
 | 商 品 | 30,000 | | |
 
 損益計算書 P/L
-| 科目 | 金額 |
-| -------- | ------ |
-| 売上高 | 250,000|
-| 売上原価 | 200,000 |
-| 売上総利益 | 50,000 |
+| 科目 | 金額 | 金額 |
+| -------- | ------ |------ |
+| 売上高 | |250,000|
+| 売上原価 | | |
+| > 期首商品棚卸高 | 80,000 ||
+| > 当期商品仕入高 | 150,000 ||
+| > > 合計 | 230,000 ||
+| > 期末商品棚卸高 | 30,000 | 200,000|
+| > > 売上総利益 | |50,000 |
+
+Rather than memorise the keywords, I understand it as so
+
+- at the beginning of this period , we start by accounting for last period's left over inventory: `期首` + `商品` + `棚卸高`
+- then we account for the purchasing cost for this period: `当期` + `商品` + `仕入高`
+- then we calculate the remaining inventory at the end of this period: `期末` + `商品` + `棚卸高`
+- `period` + `inventory` + `price`
 
 売上原価 is derived from the below form
 
