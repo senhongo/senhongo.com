@@ -1,7 +1,7 @@
 ---
-title: 割引・返品・割戻 / Discounts Returns & Rebates
+title: 割引・返品・割戻 / Markdowns Returns & Rebates
 date: 2026/05/27
-description: Going into details about the handling discounts, returns and rebates
+description: Going into details about the handling markdowns, returns and rebates
 series: CPTA
 tags: [簿財]
 category: study notes
