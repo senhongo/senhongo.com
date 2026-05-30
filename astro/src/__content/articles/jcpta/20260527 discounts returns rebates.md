@@ -7,9 +7,7 @@ tags: [簿財]
 category: study notes
 ---
 
-Terminology
-
-**1. 値引**
+## 1. 値引
 
 Often used when there's an issue with the product and the price has to be lowered to entice sales.
 
@@ -19,7 +17,7 @@ Often used when there's an issue with the product and the price has to be lowere
 
 売上側: 売上減額 (reduced sales)
 
-**2. 返品**
+## 2. 返品
 
 売買された商品を売主に返す
 
@@ -29,7 +27,7 @@ Often used when there's an issue with the product and the price has to be lowere
 
 返品は仕入・売上の取消し
 
-**3. 割戻**
+## 3. 割戻
 
 It's exactly the same process as 値引, the the context is different. This is for situations like a manufacturer's discount, or a user using a gift card.
 
@@ -39,7 +37,9 @@ It's exactly the same process as 値引, the the context is different. This is f
 
 売上側: 売上割戻
 
-basically the same as 値引き
+Basically the same as 値引き.
+
+## 仕訳
 
 When broken down into a 仕訳, it looks like this basically. The 仕入 is on the right side while the 売上 is on the left side.
 
