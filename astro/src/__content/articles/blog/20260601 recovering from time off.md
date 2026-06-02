@@ -2,7 +2,7 @@
 title: Recovering from time off
 date: 2026/06/01
 description: I took two weeks off my studies to visit family in Singapore. It was hard to get back into the rythm of it.
-series:
+series: CPTA
 tags: []
 category: thoughts
 ---
@@ -17,7 +17,7 @@ I went back to Singapore to visit my father because he had just finished his can
 
 Before the trip, I spedrun through several hours worth of lectures thinking I could work on the exercises when I was in SG. Until now, I've not skept too far ahead, remaining only 1 or 2 lectures ahead and that was fine.
 
-This time, I crammed 9 lecturers worth.
+This time, I crammed 9 lectures worth.
 
 And no, I didn't have time to do any of my exercises while I was in Singapore.
 
