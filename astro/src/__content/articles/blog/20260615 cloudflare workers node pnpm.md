@@ -6,7 +6,7 @@ tags: [node, pnpm, cloudflare workers]
 category: dev
 ---
 
-You can set them by adding the `NODE_VERSION` and `PNPM_VERSION` env vars in the Cloudflare Workers dashboard, which is what I did initially, but I wanted to use version rangers and so preferred to set them programmatically or via config files in code rather than the dashboard.
+You can set them by adding the `NODE_VERSION` and `PNPM_VERSION` env vars in the Cloudflare Workers dashboard, which is what I did initially, but I wanted to use version ranges and so preferred to set them in code rather than the dashboard.
 
 I've wasted a couple of hours so you don't have to.
 
