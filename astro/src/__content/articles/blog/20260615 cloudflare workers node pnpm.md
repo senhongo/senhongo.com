@@ -33,13 +33,13 @@ To specify a node version, you _must_ use a `.nvmrc` file.
 // package.json
 {
   "packageManager": "pnpm@11.6.0",
-    "devEngines": {
-      "packageManager": {
-        "name": "pnpm",
-        "version": "11.6.0",
-        "onFail": "download"
-      }
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.6.0",
+      "onFail": "download"
     }
+  }
 }
 ```
 
