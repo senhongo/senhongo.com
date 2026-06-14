@@ -13,7 +13,11 @@ export async function getStaticPaths() {
   return allCategories.map((category) => ({
     params: { category },
     props: {
-      posts: allPosts.filter((post) => post.data.category === category),
+      posts: allPosts
+        .filter((post) => post.data.category === category)
+        .sort((a, b) =>
+          b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
+        ),
     },
   }));
 }
