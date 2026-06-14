@@ -30,11 +30,11 @@
     "typescript-eslint": "^8.55.0",
     "wrangler": "^4.61.1"
   },
-  "packageManager": "^pnpm@11.0.0",
+  "packageManager": "pnpm@11.6.0",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "^11.0.0",
+      "version": "11.6.0",
       "onFail": "download"
     }
   }
