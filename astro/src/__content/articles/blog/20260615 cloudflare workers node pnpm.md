@@ -2,7 +2,7 @@
 title: Setting Node and PNPM versions in Cloudflare Workers programmatically
 date: 2026/06/15
 description: Tried to use env vars to set versions, didn't work. Wasted a couple hours testing several different configs.
-tags: []
+tags: [node, pnpm, cloudflare workers]
 category: dev
 ---
 
