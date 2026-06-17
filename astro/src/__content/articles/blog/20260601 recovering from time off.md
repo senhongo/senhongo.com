@@ -31,6 +31,6 @@ Essentially, the entire month of May was wasted.
 
 ## Making time up
 
-I had hoped to be done with all the lectures by now so that I could focus on the past year exams. A rough calculation shows that I have about a thousand hours of lectures left. At 2x speed that's still 500 hours. That's not including the time for writing notes or during the exercises.
+I had hoped to be done with all the lectures by now so that I could focus on the past year exams. A rough calculation shows that I have about a thousand hours of lectures left. At 2x speed that's still 500 hours. That's not including the time for writing notes or doing the exercises.
 
 Not much else I can other than do optimising my time and cutting out everything non-essential.

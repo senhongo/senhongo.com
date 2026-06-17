@@ -36,7 +36,11 @@ export const collections = { blog };
  * recipes/20240921 bak kut teh.md
  *
  * this value is used directly as a slug making the url messy
- * so we need to format the slug into a prettier format
+ * so we need to format the slug into a prettier format like '/hello-world'
+ *
+ * what happens when there are clashing titles?
+ * - [ ] write a complicated function to run a check against existing titles
+ * - [x] use another title
  */
 function prettifySlug(entry: string) {
   // Uncomment to display original value
