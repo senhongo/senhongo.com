@@ -3,7 +3,7 @@ import rss from '@astrojs/rss';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
 export async function GET(context) {
-  const posts = await getCollection('blog').sort((a, b) =>
+  const posts = (await getCollection('blog')).sort((a, b) =>
     b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
   );
 
