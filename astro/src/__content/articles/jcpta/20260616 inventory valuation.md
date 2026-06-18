@@ -46,7 +46,7 @@ Conditions that define whether a loss should be considered a 原価(仕入) / co
 
 Basically, there's only ever 1 condition that allows 原価性, everything else doesn't.
 
-These expressions are often used in the exams.
+These expressions are often used in the exams, so watch out for these to be sure which is and isn't 原価性.
 
 | 原価性あり           | 原価性なし       |
 | -------------------- | ---------------- |
