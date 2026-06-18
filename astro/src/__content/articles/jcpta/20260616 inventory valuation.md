@@ -34,11 +34,30 @@ The 棚卸高 in reality / 実地, losses due to theft or whatever other reasons
 
 ### 原価性
 
+原価性 = 売上や製造に欠かせない必須のコスト
+
 Conditions that define whether a loss should be considered a 原価(仕入) / cost or a 特別損失 / Special Expense or Extraordinary Loss. 営業外費用 is also often used in practise, but for the exams, stick to 特別損失.
 
-| 原価性 | あり | 無し |
-| ------ | ---- | ---- |
-| a      | o    | x    |
-| a      | x    | x    |
+| 発生額 | 発生頻度 | 原因   |
+| ------ | -------- | ------ |
+|        | 経常的   | 臨時的 |
+| 通常   | o        | x      |
+| 頻繁   | x        | x      |
 
 Basically, there's only ever 1 condition that allows 原価性, everything else doesn't.
+
+These expressions are often used in the exams.
+
+| 原価性あり           | 原価性なし       |
+| -------------------- | ---------------- |
+| 経常的に発生している | 臨時的に発生     |
+| 正常な範囲の額である | 異常な原因による |
+| 不可避的に発生する   | 特に多額である   |
+
+## How it's treated in the books (帳簿)
+
+|            |                      |                    |
+| ---------- | -------------------- | ------------------ |
+| 原価性あり | 売上原価に算入       | 仕入勘定へ振替     |
+| 原価性あり | 販売費及び一般管理費 | 「商品棚卸減耗損」 |
+| 原価性なし | 営業費用・特別損失   | 「商品棚卸減耗損」 |
