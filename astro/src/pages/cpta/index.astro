@@ -9,7 +9,7 @@ import Pill from '@/components/taxonomy/pill.astro';
 const allBlogPosts = (await getCollection('blog'))
   .filter((post) => post.data.series === 'CPTA')
   .sort((a, b) =>
-    a.data.date.localeCompare(b.data.date, undefined, { numeric: true }),
+    b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
   );
 
 const tags = [...new Set(allBlogPosts.flatMap((post) => post.data.tags))];
