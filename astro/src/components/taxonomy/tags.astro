@@ -4,7 +4,9 @@ import { getCollection } from 'astro:content';
 import PillList from './pill-list.astro';
 import Pill from './pill.astro';
 
-const posts = await getCollection('blog');
+const posts = (await getCollection('blog')).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
+);
 const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
 ---
 

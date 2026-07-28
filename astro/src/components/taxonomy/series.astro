@@ -9,6 +9,9 @@ const series = [
   ...new Set(
     allPosts
       .filter((post) => post.data.series)
+      .sort((a, b) =>
+        b.data.date.localeCompare(a.data.date, undefined, { numeric: true }),
+      )
       .flatMap((post) => post.data.series),
   ),
 ];
